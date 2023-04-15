@@ -1,5 +1,9 @@
 This is my portfolio site that I will add to as it develops.
+## Table of contents
 
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -10,7 +14,6 @@ This is my portfolio site that I will add to as it develops.
 ### Screenshot
 
 ![](images/website.png)
-
 ![](images/website-responsive.png)
 
 
@@ -36,5 +39,6 @@ This is my portfolio site that I will add to as it develops.
 
 
 - Linkedin - (https://www.linkedin.com/in/yunus-emre-%C3%B6zt%C3%BCrk-83a794250/)
+
 
 
