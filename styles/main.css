@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+/*Header*/
+
+.page > header {
+  padding: 32px;
+  margin-top: 32px;
+
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+.page__menu {
+  max-width: 450px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 8px auto;
+  padding: 16px;
+  overflow: hidden;
+  font-size: 13px;
+  box-shadow: 16px 14px 20px #0000008c;
+  border: 1px solid gray;
+  border-radius: 32px;
+  background: rgb(28, 18, 28);
+  background: linear-gradient(
+    0deg,
+    rgba(28, 18, 28, 1) 23%,
+    rgba(111, 109, 111, 1) 79%,
+    rgba(133, 131, 133, 1) 99%
+  );
+}
+
+.page__menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+}
+
+.page__menu ul a {
+  display: flex;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  position: relative;
+}
+
+.page__menu ul a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.page__menu ul a:hover::after {
+  content: "";
+  width: 100%;
+}
+
+.page__menu ul i {
+  color: #f7f7ef;
+}
+
+/*Main*/
+
+main {
+  grid-area: 2 / 1 / 5 / 6;
+}
+
+.page__contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  font-family: "Monoton", cursive;
+  margin-top: 48px;
+}
+
+.page__contents h2 {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.page__contents p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/*about*/
+.page__about {
+  text-align: center;
+  margin-top: 48px;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-family: "Londrina Solid", cursive;
+}
+
+.page__about h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.page__about p {
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.line {
+  background-color: black;
+  width: 30%;
+  height: 2px;
+}
+
+/*project*/
+
+.page__project {
+  text-align: center;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "Chivo Mono", monospace;
+}
+
+.page__project a h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+}
+
+.page__project a p {
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  margin-top: 8px;
+}
+
+.page__project-card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  padding: 8px;
+  border: 1px solid gray;
+  
+}
+
+/*Footer*/
+.page > footer {
+  grid-area: 5 / 1 / 6 / 6;
+  background-color: black;
+}
+
+.footer__contact {
+  margin-top: 24px;
+}
+
+.footer__contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  gap: 24px;
+}
+
+.footer__contact ul a {
+  color: gray;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 800px) {
+  /*Header*/
+
+  .page > header {
+    padding: 48px;
+
+    grid-area: 1 / 1 / 2 / 6;
+  }
+
+  .page__menu {
+    position: fixed;
+    background-color: blue;
+    top: 0;
+
+    max-width: 800px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 16px auto;
+    padding: 24px;
+    border: 1px solid gray;
+    border-radius: 32px;
+    background: rgb(28, 18, 28);
+    background: linear-gradient(
+      0deg,
+      rgba(28, 18, 28, 1) 23%,
+      rgba(111, 109, 111, 1) 79%,
+      rgba(133, 131, 133, 1) 99%
+    );
+  }
+
+  .page__menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    width: 100%;
+  }
+
+  .page__menu ul a {
+    display: flex;
+    gap: 8px;
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+    position: relative;
+  }
+
+  .page__menu ul a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+
+  .page__menu ul a:hover::after {
+    content: "";
+    width: 100%;
+  }
+
+  .page__menu ul i {
+    color: #f7f7ef;
+  }
+
+  .page__about h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .page__about p {
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+
+  .page__project {
+    text-align: center;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  
+}
