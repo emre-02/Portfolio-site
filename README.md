@@ -9,7 +9,9 @@ This is my portfolio site that I will add to as it develops.
 
 ### Screenshot
 
-![]()
+![](images/website.png)
+
+![](images/website-responsive.png)
 
 
 ### Links
